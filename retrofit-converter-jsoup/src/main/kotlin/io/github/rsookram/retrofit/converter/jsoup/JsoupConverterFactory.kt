@@ -15,11 +15,10 @@ class JsoupConverterFactory(
         type: Type,
         annotations: Array<out Annotation>,
         retrofit: Retrofit
-    ): Converter<ResponseBody, *>? {
+    ): Converter<ResponseBody, *>? =
         if (type == Document::class.java) {
-            return JsoupResponseBodyConverter(charsetName, baseUri)
+            JsoupResponseBodyConverter(charsetName, baseUri)
         } else {
-            return null
+            null
         }
-    }
 }
