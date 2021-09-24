@@ -4,6 +4,29 @@
 [jsoup](https://jsoup.org/) for serialization from HTML.
 
 
+## Usage
+
+Add the converter when configuring your Retrofit instance
+
+```kotlin
+val retrofit = Retrofit.Builder()
+    .baseUrl("https://github.com/")
+    .addConverterFactory(JsoupConverterFactory())
+    .build()
+```
+
+then services created from that Retrofit instance will support returning jsoup
+`Document`s.
+
+```kotlin
+interface WebPageService {
+
+    @GET("rsookram/retrofit-converter-jsoup/blob/main/README.md")
+    suspend fun fetch()
+}
+```
+
+
 ## Building
 
 retrofit-converter-jsoup can be built from source by cloning this repository
