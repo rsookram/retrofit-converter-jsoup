@@ -11,6 +11,10 @@ dependencies {
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
 }
 
+java {
+    withSourcesJar()
+}
+
 tasks.jar {
     manifest {
         attributes("Automatic-Module-Name" to "io.github.rsookram.retrofit.converter.jsoup")
