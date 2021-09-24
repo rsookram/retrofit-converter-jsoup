@@ -13,6 +13,8 @@ import retrofit2.Retrofit
 import retrofit2.create
 import retrofit2.http.GET
 
+// The explicit API mode errors in the IDE are false positives:
+// https://youtrack.jetbrains.com/issue/KT-42718
 class JsoupConverterFactoryTest {
 
     interface Service {

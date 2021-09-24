@@ -14,7 +14,7 @@ import retrofit2.Retrofit
  * meta tag if present, falling back to UTF-8.
  * @param baseUri The URL where the HTML was retrieved from, to resolve relative links against.
  */
-class JsoupConverterFactory(
+public class JsoupConverterFactory(
     private val charsetName: String? = "UTF-8",
     private val baseUri: String = "",
 ) : Converter.Factory() {
