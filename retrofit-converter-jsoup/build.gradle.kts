@@ -50,6 +50,35 @@ publishing {
 
             artifact(dokkaJavadocJar)
             artifact(dokkaHtmlJar)
+
+            pom {
+                name.set("retrofit-converter-jsoup")
+                description.set("Retrofit converter which uses jsoup for serialization from HTML")
+                url.set("https://github.com/rsookram/retrofit-converter-jsoup")
+
+                licenses {
+                    license {
+                        name.set("Apache-2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                        distribution.set("repo")
+                    }
+                }
+
+                scm {
+                    url.set("https://github.com/rsookram/retrofit-converter-jsoup")
+                    connection
+                        .set("scm:git:https://github.com/rsookram/retrofit-converter-jsoup.git")
+                    developerConnection
+                        .set("scm:git:https://github.com/rsookram/retrofit-converter-jsoup.git")
+                }
+
+                developers {
+                    developer {
+                        id.set("rsookram")
+                        name.set("Rashad Sookram")
+                    }
+                }
+            }
         }
     }
 }
