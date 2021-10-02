@@ -1,0 +1,7 @@
+public final class io/github/rsookram/retrofit/converter/jsoup/JsoupConverterFactory : retrofit2/Converter$Factory {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun responseBodyConverter (Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lretrofit2/Retrofit;)Lretrofit2/Converter;
+}
+
