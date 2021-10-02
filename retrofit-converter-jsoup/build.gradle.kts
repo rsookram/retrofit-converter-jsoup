@@ -11,10 +11,10 @@ kotlin {
 
 dependencies {
     api("com.squareup.retrofit2:retrofit:2.9.0")
-    api("org.jsoup:jsoup:1.14.2")
+    api("org.jsoup:jsoup:1.14.3")
 
     testImplementation("junit:junit:4.13.2")
-    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.2")
 }
 
 java {
