@@ -18,6 +18,9 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
+      - name: Check for ABI changes
+        run: ./gradlew apiCheck
+
       - name: Test
         run: ./gradlew test
 
