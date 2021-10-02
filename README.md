@@ -3,7 +3,6 @@
 [Retrofit](https://square.github.io/retrofit/) converter which uses
 [jsoup](https://jsoup.org/) for serialization from HTML.
 
-
 ## Usage
 
 Add the converter when configuring your Retrofit instance
@@ -26,6 +25,26 @@ interface WebPageService {
 }
 ```
 
+## Download
+
+Add jitpack to your root `build.gradle` at the end of `repositories`:
+
+```gradle
+allprojects {
+    repositories {
+        // ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Then add the dependency to your module-level `build.gradle` file:
+
+```gradle
+dependencies {
+    implementation 'com.github.rsookram:retrofit-converter-jsoup:0.0.1'
+}
+```
 
 ## Building
 
@@ -39,7 +58,6 @@ cd retrofit-converter-jsoup
 ```
 
 The built JAR can be found in `retrofit-converter-jsoup/build/libs/`.
-
 
 ## License
 
